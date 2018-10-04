@@ -7,6 +7,7 @@ The application is designed such that any new Commands or business logic can be 
 The application is extensible and also testable.  
 
 ### Parsing the commands
+
 The file is parsed and the respective commands are created based on the content of the file. 
 A command that cannot be be parsed or is an invalid command will be treated as a NullCommand and 
 the position of the robot is not impacted by this.
@@ -24,14 +25,15 @@ A square tabletop, of dimensions 5 units x 5 units.
 * The robot is free to roam around the surface of the table, but must be prevented from falling to destruction - `Only valid moves are considered, others are ignored.`
 * Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed. - `Only valid moves are considered, others are ignored.`
 
-Only these commands are considered:
-```
-PLACE X,Y,F
-MOVE
-LEFT
-RIGHT
-REPORT
-```
+* Only these commands are considered:
+
+  ```
+    PLACE X,Y,F
+    MOVE
+    LEFT
+    RIGHT
+    REPORT
+  ```
 
 
 ###  Unit testing
@@ -47,15 +49,16 @@ The application can be imported as a maven project into any IDE such as Eclipse/
 
 ## Running the application
 
-Clone the git repository `git@gitlab.com:connect.manjunath/toy-robot.git`
+* Clone the git repository:
+  `git clone git@gitlab.com:connect.manjunath/toy-robot.git`
 
-Navigate to the directory where the git repository was cloned and run:
+* Navigate to the directory where the git repository was cloned and run:
 
-`mvn clean install`
+  `mvn clean install`
 
-This will run all tests and generate the jar at below location:
+* This will run all tests and generate the jar at below location:
 
-`toy-robot/target/toy-robot-simulator-1.0.0.jar`
+  `toy-robot/target/toy-robot-simulator-1.0.0.jar`
 
 ### Executing the application
 
@@ -67,13 +70,13 @@ for example : `java -jar target/toy-robot-simulator-1.0.0.jar src/main/resources
 
 This will generate an out as follows in the console:
 
-```
-Sep. 28, 2018 6:26:02 PM org.toyrobot.simulator.utils.FileUtils createFile
-INFO: Output file path:/Users/manjunath/Documents/code_challenge/iress/toy-robot/result.txt
-Sep. 28, 2018 6:26:02 PM org.toyrobot.simulator.utils.FileUtils createFile
-INFO: 3,3,NORTH
-Sep. 28, 2018 6:26:02 PM org.toyrobot.simulator.utils.FileUtils createFile
-INFO: 3,3,EAST
-```
+  ```
+  Oct. 04, 2018 11:15:57 AM org.toyrobot.simulator.utils.FileUtils createFile
+  INFO: Output file path:/Users/manjunath/Documents/code_challenge/iress/toy-robot/result.txt
+  Oct. 04, 2018 11:15:57 AM org.toyrobot.simulator.utils.FileUtils createFile
+  INFO: 3,3,NORTH
+  Oct. 04, 2018 11:15:57 AM org.toyrobot.simulator.utils.FileUtils createFile
+  INFO: 3,3,EAST
+  ```
 
 The _**output file path**_ represents the location of the _**result file**_.

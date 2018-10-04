@@ -1,1 +1,2 @@
-0,1,NORTH
+3,3,NORTH
+3,3,EAST
