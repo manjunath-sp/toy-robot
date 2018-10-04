@@ -1,4 +1,4 @@
-#Toy Robot Code Challenge
+##Toy Robot Code Challenge
 
 The Toy Robot coding challenge is described in the following pages. Please review and complete an implementation that fulfils the requirements. Please take as much time as you need to complete the challenge. We would prefer you take the time to complete a solution you are happy with.
 
@@ -12,7 +12,7 @@ The solution can be provided in any language and any paradigm you feel comfortab
 * Appropriate unit and/or integration tests included with your source code (these should be runnable)
 
 
-##Description
+###Description
 
 The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5
 units x 5 units.
