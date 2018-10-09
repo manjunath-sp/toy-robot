@@ -72,7 +72,7 @@ This will generate an out as follows in the console:
 
   ```
   Oct. 04, 2018 11:15:57 AM org.toyrobot.simulator.utils.FileUtils createFile
-  INFO: Output file path:/Users/manjunath/Documents/code_challenge/iress/toy-robot/result.txt
+  INFO: Output file path:/Users/Documents/code_challenge/toy-robot/result.txt
   Oct. 04, 2018 11:15:57 AM org.toyrobot.simulator.utils.FileUtils createFile
   INFO: 3,3,NORTH
   Oct. 04, 2018 11:15:57 AM org.toyrobot.simulator.utils.FileUtils createFile
